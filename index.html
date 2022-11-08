@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Encriptador de texto Alura</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="logo">
+        <img src="./img/Logo.png" alt="Logo Alura" />
+      </header>
+      <section>
+        <textarea
+          class="texto"
+          placeholder="Ingrese el texto aqui"
+          name=""
+          id="palabra"
+          cols="30"
+          rows="10"
+          pattern="[a-z]+"
+          data-texto="texto"
+          required
+        ></textarea>
+        <p class="alerta">🛈 Solo letras minúsculas y sin acentos</p>
+        <div class="button">
+          <input
+            class="button-encriptar"
+            type="button"
+            value="Encriptar"
+            onclick="btnEncriptar()"
+            data-encriptar="encriptar"
+          />
+          <input
+            class="button-desencriptar"
+            type="button"
+            value="Desencriptar"
+            onclick="btnDesencriptar()"
+            data-desencriptar="desencriptar"
+          />
+        </div>
+      </section>
+      <section class="mensaje">
+        <textarea
+          class="texto-encriptado"
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          data-mensaje="mensaje"
+        ></textarea>
+        <p class="ningun-msj">Ningún mensaje fue encontrado</p>
+        <p class="texto-desencriptar">
+          Ingresa el texto que desees encriptar o desencriptar.
+        </p>
+        <input class="copiar" type="button" value="Copiar" />
+      </section>
+    </div>
+    <footer class="footer">Desarrollado por Julio Realza 2022</footer>
+    <!-- <script src="./js/script.js"></script> -->
+    <script src="./js/script.js"></script>
+    <!-- <script src="./js/script2.js"></script> -->
+  </body>
+</html>
