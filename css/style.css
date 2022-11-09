@@ -10,10 +10,7 @@ body {
 
 .logo {
   position: relative;
-  border-radius: 0px;
-  height: 48px;
-  width: 32px;
-  left: -20px;
+  left: -15px;
   top: 30px;
 }
 
@@ -25,7 +22,7 @@ body {
   width: 220px;
   height: 200px;
   color: #0a3871;
-  left: 20px;
+  left: 30px;
   top: 80px;
   border: 0;
   resize: none;
@@ -38,6 +35,7 @@ body {
 
 .alerta {
   position: relative;
+  text-align: center;
   font-family: 'Roboto', sans-serif;
   font-size: 0.7rem;
   font-weight: 400;
@@ -52,10 +50,9 @@ body {
 .button {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 6px;
   gap: 8px;
-  width: 270px;
   margin: 120px 20px;
 }
 
@@ -90,7 +87,7 @@ body {
 .mensaje {
   position: absolute;
   padding-top: 50px;
-  top: 500px;
+  top: 490px;
   left: 30px;
 }
 
@@ -142,11 +139,28 @@ body {
 }
 
 .copiar {
+  position: absolute;
+  background: #ffffff;
+  color: #0a3871;
+  border-radius: 9px;
+  border: 1px solid #0a3871;
+  width: 193px;
+  height: 27px;
+  top: 165px;
+  left: 55px;
   display: none;
 }
+
 .footer {
-  display: none;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  /* align-content: flex-start; */
+  justify-content: center;
+  font-size: 0.7rem;
+  color: #858d94;
+  /* margin-bottom: -35px; */
 }
+
 @media screen and (min-width: 768px) {
   .logo {
     top: 80px;
@@ -156,7 +170,6 @@ body {
     position: relative;
     align-items: center;
     font-size: 2rem;
-    font-size: 3rem;
     width: 500px;
     height: 300px;
     top: 200px;
@@ -173,12 +186,12 @@ body {
   .button {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     width: 760px;
-    height: auto;
     margin-top: 320px;
-    margin-left: 50px;
+    margin-left: auto;
     gap: 20px;
+    order: 1;
   }
 
   .button-encriptar {
@@ -221,11 +234,31 @@ body {
     top: 80px;
   }
   .copiar {
+    position: absolute;
+    background: #ffffff;
+    color: #0a3871;
+    border-radius: 9px;
+    border: 1px solid #0a3871;
+    width: 193px;
+    height: 27px;
+    top: 130px;
+    left: 260px;
     display: none;
+  }
+  .footer {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    /* text-align: center; */
+    font-size: 0.7rem;
+    /* margin-left: 260px; */
+    margin-top: 230px;
+    letter-spacing: 2px;
+    color: #858d94;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1240px) {
   .logo {
     top: 50px;
     left: 50px;
@@ -239,7 +272,7 @@ body {
     top: 168px;
   }
   .alerta {
-    left: 120px;
+    left: 170px;
     top: 740px;
   }
   .button {
@@ -256,7 +289,7 @@ body {
     position: absolute;
     width: 300px;
     top: 100px;
-    left: 1280px;
+    left: 1250px;
   }
   .texto-encriptado {
     background-image: url(/img/Muñeco.png);
@@ -297,7 +330,7 @@ body {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size: 0.7rem;
-    margin-left: 900px;
+    /* margin-left: 900px; */
     margin-top: 190px;
     letter-spacing: 5px;
     color: #858d94;
